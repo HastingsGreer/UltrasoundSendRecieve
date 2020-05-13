@@ -1,0 +1,7 @@
+int: length_of_metadata
+length_of_metadata bytes: metadata
+int: width
+int: height
+width * height shorts: an image
+width * height shorts: an image
+...
