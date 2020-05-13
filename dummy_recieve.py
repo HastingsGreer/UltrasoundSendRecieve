@@ -2,6 +2,11 @@ import numpy as np
 import socket
 import cv2
 
+"""
+Dummy Reciever. This code listens on the socket 9999 
+and displays the images recieved using openCV.
+"""
+
 def process(x, metadata):
     cv2.imshow(metadata, x)
     cv2.waitKey(1)
