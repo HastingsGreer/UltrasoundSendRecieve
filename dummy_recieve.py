@@ -8,6 +8,7 @@ and displays the images recieved using openCV.
 """
 
 def process(x, metadata):
+    x = x * (2**16 // np.max(x))
     cv2.imshow(metadata, x)
     cv2.waitKey(1)
 
